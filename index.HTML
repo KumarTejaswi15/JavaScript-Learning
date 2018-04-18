@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>Learning JavaScript</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+<body>
+    <div class="header">
+        <h1 id="heading">Learning JavaScript</h1>
+        <p>With Kumar Tejaswi</p>
+    </div>
+
+    <div class="container">
+        <form method="POST" action="" name="myForm">
+            <div>
+                <label>First Name</label>
+                <input type="text" name="firstName" id="firstName" />
+            </div>
+            <br />
+            <div>
+                <label>Last Name</label>
+                <input type="text" name="lastName" id="lastName" />
+            </div>
+            <br />
+            <div>Background Colour
+                <select name="background" id="background" onchange="changeBackground(this)" >
+                    <option value="">Select Colour</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+            </div>
+            <br />
+            <input type="submit" name="Submit" value="Submit">
+        </form>
+
+
+        <!-- <button onclick="doClick()">Click Me</button> -->
+
+        <!-- <button onclick="changeText(this)">Click Here</button> -->
+
+        <!-- <button onclick="changeText()">Click Here</button> -->
+        
+        <!-- <button onmouseout="clearText()" onmouseover="showDate()">Click Here for date</button>
+        <h1 id="time"></h1> -->
+    </div>
+
+    <script>
+        function changeBackground(x){
+            console.log(x.value);
+            //var background = document.getElementById('background').value;
+            //document.bgColor = background;
+
+            var heading = document.getElementById('heading');
+            heading.style.color = x.value;
+            
+
+            // background.style.backgroundColor = x.value;
+            
+
+        }
+
+        // function showDate(){
+        //     var time = document.getElementById('time');
+        //     time.innerHTML = Date();
+        // }
+        //  function clearText(){
+        //      var time = document.getElementById('time');
+        //      time.innerHTML = '';
+        // }
+        // function changeText(){
+        //     var heading = document.getElementById('heading');
+        //     heading.innerHTML = "You have started learning"
+        // }
+
+        // function changeText(id){
+        //     id.innerHTML='You clicked here!'
+        // }
+
+        // function doClick(){
+        //     alert('You Clicked');
+        // }
+
+        // var numbers = [1,2,3,4,6,4,9];
+
+        // var colours = [];
+
+        // colours.push('Green');
+        
+        // alert(colours+" I am excited to learn JavaScript language "+numbers.length);
+
+        // var numbers =  [22,1,23,47,85,96,23,25];
+
+        // numbers.forEach(function(output){
+        //     alert(output);
+        // });
+        // var al=0;
+        // for (var i =0; i < numbers.length; i++) {
+        //     al = numbers[i];  
+        // }
+
+        // alert(al);
+
+    </script>
+</body>
+</html>
